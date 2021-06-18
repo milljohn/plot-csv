@@ -19,6 +19,9 @@ if filename.lower().endswith('csv'):
 elif filename.lower().endswith(('xls', 'xlsb', 'xlsm', 'xlsx')):
     print('Reading Excel file')
     data = pd.read_excel(filename)
+else:
+    print("You did not select a valid file")
+    exit(0)
 
 # preview data
 print(data.head())
