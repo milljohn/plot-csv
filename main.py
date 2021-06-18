@@ -61,3 +61,4 @@ axs[2].xlabel('time (s)')
 axs[2].ylabel('Force z')
 axs[2].plot(time, z)
 
+plt.show()
