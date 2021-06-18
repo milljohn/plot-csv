@@ -21,3 +21,23 @@ In powershell, run the following:
 ```powershell
 python main.py
 ```
+
+## Modify the Code
+
+You will need to modify the code for your needs.
+
+This is where you will need to modify the column names to match the csv and the time window you are looking at the data.
+For instance, if the column name is `time(s)`, then change `time = data['time(s)'][time_begin:time_end]`
+
+You can also change the beginning and ending time. NOTE: this is the index, not the actual timestamp.
+
+```python
+time_begin = 0
+time_end = None
+
+time = data['time'][time_begin:time_end]
+x = data['x'][time_begin:time_end]
+y = data['y'][time_begin:time_end]
+z = data['z'][time_begin:time_end]
+```
+
